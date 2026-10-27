@@ -1,0 +1,81 @@
+p{
+    text-align: center;
+    color: rgb(61, 206, 216);
+    font-family: 'Times New Roman', Times, serif;
+    font-size: larger;
+}
+
+h1{
+    text-align: center;
+    color: rgb(61, 206, 216);
+    font-size: 50px;
+}
+
+.Tabela {
+    width: 50%;
+    margin: 30px auto;
+    background-color: azure;
+}
+
+.Tabela th {
+    background-color: rgb(26, 80, 151);
+    color: white;
+    padding: 12px;
+}
+
+.Tabela td {
+    padding: 12px;
+    border: 1px solid gray;
+}
+
+.Sites {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    list-style: none;
+    padding: 40px;
+}
+
+/*Ajuste para tablets*/
+@media (min-width: 600px) and (max-width: 1100px) {
+    p{
+        color: darkseagreen;
+        font-size: larger;
+    }
+
+    h1 {
+        color: darkseagreen;
+        font-size: 40px;
+    }
+
+    .Tabela th {
+        background-color: darkolivegreen;
+    }
+}
+
+/*Ajuste para celurares*/
+@media (max-width: 599px) {
+    p {
+        color: crimson;
+        font-family:Impact,'Arial Narrow Bold', sans-serif;
+        padding: 10px;
+    }
+
+    h1 {
+        color: crimson;
+        font-size: 30px;
+    }
+
+    .Tabela th {
+        background-color: darkred;
+    }
+
+    .Tabela {
+        width: 90%;
+    }
+
+    .Sites {
+        flex-direction: column;
+    }
+
+}
